@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pet Adoption Application</title>
+	<link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+	<div class="banner"><a href="index.html"><img src="images/logo.png" width="150" height="150"> </a>
+        <h1 class="heading">        Find your new best friend today!</h1>
+    </div>
+    <div class="banner">
+        <a>About us</a> <a>Adopt</a> <a href="vet_appointment.html">Visit a Vet</a> <a>Resources</a> <a href="donate.html">Donate</a> <a>Rehome a Pet</a>
+    </div>
+<h1>Pet Adoption Application</h1>
+	<section class="box">
+		<div>
+			<div>
+				<div><h1>
+				Please provide all the necessary information</h1></div>
+				<div> 
+					<form action="adoptionApplications.php" method="post">
+						<div>
+							First Name <input type="text" name="firstName" required>
+							Last Name <input type="text" name="lastName" required>
+						</div>
+						<div>
+							User ID <input type="text" name="customerID" required>
+						</div>
+						<div>
+							<div>
+							<label for="gender">Gender</label>
+							<select name="gender">
+								<option value="M">Male</option>
+								<option value="F">Female</option>
+							</select>
+						</div>	
+						<div>
+							Email <input type="email" name="email" required>
+						</div>
+						
+						<div>
+							Phone Number <input type="text" name="phone" required>
+						</div>
+						
+						<div>
+							Address <input type="text" name="address" placeholder="Address">
+						</div>
+						<div>
+							Which pet would you like to adopt? <input type="text" name="adoptPet" required>
+						</div>
+						<div>
+							<label for="ownPets">Do you own any pets?</label>
+							<select name="ownPets" id="ownPets">
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							</select>
+						</div>
+						<div>
+							<label for="haveYard">Do you have a yard?</label>
+							<select name="haveYard">
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select>
+						</div>
+						<div>
+							<label for="haveChildren">Are there children (under 16) in the home?</label>
+							<select name="haveChildren">
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+							</select>
+						</div>
+						<div>
+						How many hours per day would the pet be alone? <input type="number" name="petAlone">
+						</div>
+						<div>
+						If you have to leave town, emergency or planed, where would your pet stay? <input type="text" name="stayWith">
+						</div>
+						<div id="housing">
+							<label>What type of housing you reside in?</label>
+							<select id="dropdown" name="housing">
+								<option disabled selected value>Select an option</option>
+								<option value="apt">Apt / Condo</option>
+								<option value="house">House</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div>
+						<h1>3 Personal References</h1>
+						</div>
+						<div>
+						<label for="ref1">Reference 1</label></div>
+						<div>
+							<input type="text" id="ref1" name="refName1" placeholder="Name">
+							<input type="tel" id="ref1" name="refContact1" placeholder="Contact Number">
+							<input type="text" id="ref1" name="refEmail1" placeholder="Email">
+						</div>
+						<div>
+						<label for="ref2">Reference 2</label></div>
+						<div>
+							<input type="text" id="ref2" name="refName2" placeholder="Name">
+							<input type="tel" id="ref2" name="refContact2" placeholder="Contact Number">
+							<input type="text" id="ref2" name="refEmail2" placeholder="Email">
+						</div>
+						<div>
+						<label for="ref2">Reference 1</label></div>
+						<div>
+							<input type="text" id="ref2" name="refName3" placeholder="Name">
+							<input type="tel" id="ref2" name="refContact3" placeholder="Contact Number">
+							<input type="text" id="ref2" name="refEmail3" placeholder="Email">
+						</div>
+						<div><input type="submit" class="button" value="Submit Application"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
+
+</html>
