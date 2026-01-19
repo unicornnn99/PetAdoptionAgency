@@ -1,0 +1,70 @@
+body {
+    font-family: "Fredoka", sans-serif;
+    padding: 50px;
+    background-color: rgb(192, 163, 198);
+    background-image: url("C:/xampp/htdocs/PetAdoption/images/CatArt.jpg");
+
+    background-position: center;
+}
+
+h2 {
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111.0.2)0px 7px 29px 0px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button {
+    background-color: rgb(228, 212, 229);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav_link {
+    display: flex;
+    list-style: none;
+}
+
+.nav_link li {
+    padding: 0 15px;
+}
+
+.nav_link a {
+    color: rgb(20, 17, 20);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav_link a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%;
+    width: 100%;
+}
